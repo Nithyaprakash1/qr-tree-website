@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('campuslife.jpg');
+    background-size: cover;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.tree-image {
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, width 0.5s ease, margin-top 0.5s ease;
+    margin-bottom: 10px;
+}
+
+.tree-image.small {
+    width: 100px;
+    transform: translateY(-3px); /* Move the image closer to the heading */
+    margin-top: 2px;
+}
+
+.tree-image:hover {
+    transform: scale(1.1);
+}
+
+.details {
+    margin-top: 20px;
+    transition: opacity 0.5s ease, height 0.5s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.details h2 {
+    margin: 0;
+    color: #4CAF50;
+}
+
+.details p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
